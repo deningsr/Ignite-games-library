@@ -5,6 +5,12 @@ import { useSelector } from "react-redux";
 import { useHistory } from "react-router-dom";
 import { gameScrenshotURL } from "../api";
 import { smallImage } from "../util";
+import playstation from "../img/playstation.svg";
+import steam from "../img/steam.svg";
+import xbox from "../img/xbox.svg";
+import nintendo from "../img/nintendo.svg";
+import apple from "../img/apple.svg";
+import gamepad from "../img/gamepad.svg";
 
 const GameDetail = ({ pathId }) => {
   const history = useHistory();
@@ -16,6 +22,31 @@ const GameDetail = ({ pathId }) => {
       history.push("/");
     }
   };
+
+  //Get platform images
+  const getPlatform = (platform) => {
+    switch (platform) {
+      case "Playstation 4":
+        return playstation;
+      case "Playstation 5":
+        return playstation;
+      case "Xbox One":
+        return xbox;
+      case "Xbox Series S/X":
+        return xbox;
+      case "Xbox S":
+        return xbox;
+      case "PC":
+        return steam;
+      case "Nintendo Switch":
+        return nintendo;
+      case "iOS":
+        return apple;
+      default:
+        return gamepad;
+    }
+  };
+
   const { screen, game, isLoading } = useSelector((state) => state.detail);
   return (
     <>
@@ -31,7 +62,11 @@ const GameDetail = ({ pathId }) => {
                 <h3>Platforms</h3>
                 <Platforms>
                   {game.platforms.map((data) => (
-                    <h3 key={data.platform.id}>{data.platform.name}</h3>
+                    <img
+                      alt={data.platform.name}
+                      key={data.platform.id}
+                      src={getPlatform(data.platform.name)}
+                    ></img>
                   ))}
                 </Platforms>
               </Info>
@@ -70,6 +105,7 @@ const CardShadow = styled(motion.div)`
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 10;
   &::-webkit-scrollbar {
     width: 0.5rem;
   }
