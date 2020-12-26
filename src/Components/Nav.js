@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import logo from "../img/logo.svg";
 import { fetchSearched } from "../actions/gameAction";
 import { useDispatch } from "react-redux";
-
+import { fadeIn } from "../animations";
 const Nav = () => {
   const dispatch = useDispatch();
   const [textInput, setTextInput] = useState("");
@@ -23,7 +23,7 @@ const Nav = () => {
     dispatch({ type: "CLEAR_SEARCHED" });
   };
   return (
-    <StyledNav>
+    <StyledNav variants={fadeIn} initial="hidden" animate="show">
       <Logo onClick={clearSearched}>
         <img src={logo} alt="logo" />
         <h1>Ignite</h1>
