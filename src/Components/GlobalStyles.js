@@ -13,6 +13,9 @@ html {
     &::-webkit-scrollbar-thumb{
         background-color: darkgrey;
     }
+    &::-webkit-scrollbar-track {
+        background: white;
+      }
 }
 body {
     font-family: 'Montserrat', sans-serif;
@@ -20,22 +23,25 @@ body {
 }
 h2 {
     font-size: 3rem;
-     font-family: 'Abril Fatface', cursive;
-     font-weight: lighter;
+    font-family: 'Abril Fatface', cursive;
+    font-weight: lighter;
 }
 h3 {
     font-size: 1.3rem;
     color: #333;
-    padding: 1.5rem;
+    padding: 1.5rem 0rem;
 }
-p{
+p {
     font-size: 1.2rem;
     line-height: 200%;
-    color: #696969
+    color: #696969;
 }
 a {
     text-decoration: none;
     color: #333;
+}
+img {
+    display: block;
 }
 `;
 
