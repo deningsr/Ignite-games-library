@@ -12,4 +12,4 @@
 
 #### Don't see the games you are looking for? No problem! simply search for them in the search bar at the top
 
-#### Check it out here: [Ignite](ill-time.surge.sh)
+#### Check it out here: <ill-time.surge.sh>
