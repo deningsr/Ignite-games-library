@@ -5,6 +5,7 @@ import logo from "../img/logo.svg";
 import { fetchSearched } from "../actions/gameAction";
 import { useDispatch } from "react-redux";
 import { fadeIn } from "../animations";
+
 const Nav = () => {
   const dispatch = useDispatch();
   const [textInput, setTextInput] = useState("");
