@@ -18,4 +18,4 @@
 
 #### Check it out here:
 
-![Ignit](https://ignite-games-lib.netlify.app/ "Ignite")
+[Ignite](https://ignite-games-lib.netlify.app/)
