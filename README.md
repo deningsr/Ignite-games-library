@@ -1,5 +1,7 @@
 ## Ignite Game Library
 
+![Home Page](https://github.com/deningsr/Ignite-games-library/blob/main/src/img/homepage.png?raw=true "Ignite")
+
 #### This project is built with React and Redux and is intended to display my ability to create interactive web apps.
 
 ## About Ignite:
