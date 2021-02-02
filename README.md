@@ -4,6 +4,8 @@
 
 #### This project is built with React and Redux and is intended to display my ability to create interactive web apps.
 
+## Technologies Used: HTML | CSS | JavaScript | React.js | Redux | Axios | npm
+
 ## About Ignite:
 
 #### Are you a gamer like me? If so, this is the App for you!
@@ -14,4 +16,6 @@
 
 #### Don't see the games you are looking for? No problem! simply search for them in the search bar at the top
 
-#### Check it out here: ill-time.surge.sh
+#### Check it out here:
+
+![Ignit](https://ignite-games-lib.netlify.app/ "Ignite")
