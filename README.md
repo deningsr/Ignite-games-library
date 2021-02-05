@@ -4,7 +4,7 @@
 
 #### This project is built with React and Redux and is intended to display my ability to create interactive web apps.
 
-#### Technologies Used: HTML | CSS | JavaScript | React.js | Redux | Axios | npm
+#### Technologies Used: HTML | CSS | SCSS | JavaScript | React.js | Redux | Axios
 
 ## About Ignite:
 
